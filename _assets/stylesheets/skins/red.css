@@ -1,4 +1,5 @@
-#logo, #skill .bar, .no-touch .hi-icon-effect-1a .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, #filters li.active, .menu_trigger, .mobileAreaMenu li, 
+/* red!!! */
+#logo, #skill .bar, .no-touch .hi-icon-effect-1a .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, #filters li.active, .menu_trigger, .mobileAreaMenu li,
 #response .submit_buttom, .read_more_small:hover, .pricing_footer:hover, .pricing-table.color .pricing_sub_header, .pricing-table.color .pricing_footer, .social_links_footer li:hover {
 
 	background-color: #ff4040;

@@ -1,12 +1,4 @@
 /*
-* Town Onepage Retina Template V.1.0
-* Copyright 2013, @bypixels @breecode
-* http://bypixels.com/themes/town
-* AUTHOR: Breecode // http://themeforest.net/user/breecode
-* DATE: 26/08/2013
-* Find it only in Themeforest
-
-
 1- BASE 
 2- HEADER & MAIN NAV 
 2B-ABOUT US
@@ -39,7 +31,34 @@
 Available skins colors: orange.css blue.css red.css green.css yellow.css gray.css
 =================================================*/
 
-@import url("skins/red.css");
+/*@import url("skins/red.css");*/
+
+#logo, #skill .bar, .no-touch .hi-icon-effect-1a .hi-icon:hover, .no-touch .hi-icon-effect-1b .hi-icon:hover, #filters li.active, .menu_trigger, .mobileAreaMenu li,
+#response .submit_buttom, .read_more_small:hover, .pricing_footer:hover, .pricing-table.color .pricing_sub_header, .pricing-table.color .pricing_footer, .social_links_footer li:hover {
+
+    background-color: #ff4040;
+}
+
+::selection {background-color: #ff4040; color: white;}
+a:hover, .welcome_msg, .col_wrapper.active a, .the-title h1 a:hover, span.color {
+    color:#ff4040;
+}
+
+.hi-icon-effect-1 .hi-icon:after{
+    box-shadow: 0 0 0 4px #ff4040;
+}
+.pricing-table.color .pricing_header {background-color: #da2020; }
+
+.custom_button a:hover {
+    border: 2px solid #ff4040;
+}
+
+
+.carousel-next, .carousel-prev {
+    background-color: #ff4040;
+}
+.over_about {background-color: rgba(255, 54, 54, 0.9);}
+.ie8 .over_about {background-color: #ff4040;}
 
 /*=================================================
 1 - BASE 
