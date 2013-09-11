@@ -3,3 +3,8 @@ markdown: redcarpet
 pygments: true
 
 download_path: /files/blog/
+
+assets:
+  debug: false
+  js_compressor: uglifier
+  css_compressor: sass
