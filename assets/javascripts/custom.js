@@ -302,7 +302,6 @@ setTimeout(
   $(bar_six).animate({width:bar_six_percent}, 900);
   $(bar_seven).animate({width:bar_seven_percent}, 900);
 
-
   }, 800);
 
 });
