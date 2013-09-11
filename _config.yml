@@ -1,3 +1,5 @@
 name: PeteGames.com
 markdown: redcarpet
 pygments: true
+
+download_path: /files/blog/
