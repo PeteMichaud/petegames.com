@@ -2,7 +2,7 @@ name: PeteGames.com
 markdown: redcarpet
 pygments: true
 
-download_path: /files/blog/
+download_path: /files/blog/attachments/
 
 assets:
   debug: false
