@@ -129,6 +129,25 @@ blockquote p {
 .hidden {display: none;}
 .uppercase {text-transform: uppercase;}
 
+ol.p {
+    margin:1em 0 2em 1em;
+    list-style:decimal;
+}
+
+ol.p li {
+    margin:0 0 .5em 0;
+    list-style:decimal;
+}
+
+.parallax .rectangle a {
+    color:#ff4040;
+}
+
+
+.parallax .rectangle a:hover {
+    text-decoration: underline;
+}
+
 
 /*=================================================
 2 - HEADER & MAIN NAV
@@ -367,6 +386,14 @@ transition: border-color 0.3s linear, background-color 0.3s linear;
 	letter-spacing: -1px;
 }
 
+.grown_man_style {
+    font-family: 'PT Sans',arial;
+    font-size:42.5px;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
 
 /*=================================================
 6 - SKILLS BAR
@@ -403,9 +430,6 @@ transition: border-color 0.3s linear, background-color 0.3s linear;
 	margin-right: 5px;
 	font-size: 18px;
 }
-
-
-
 
 
 /*=================================================
@@ -1482,7 +1506,7 @@ padding-right: 25px;
 =================================================*/
 
 .parallax {min-height: 500px; position: relative; color:white; text-align: center; background-size:cover}
-.parallax_over {height: 100%;background-color: rgba(0,0,0,.7); position: absolute; width: 100%;}
+.parallax_over {height: 100%;background-color: rgba(0,0,0,.5); position: absolute; width: 100%;}
 .ie8 .parallax_over {background: black; filter: alpha(opacity=70);}
 .parallax h1 {font-size:35px; font-weight: 100; text-transform: uppercase;color: white; letter-spacing: 0;margin-bottom: 35px; }
 .parallax_container {padding: 50px 0px;}
