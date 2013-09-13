@@ -4,7 +4,7 @@ $(document).ready(function(){
     var $parallax = $('.parallax');
 
     $parallax.each(function(){
-       $(this).data('y_offset', $(this).offset().top)
+       $(this).data('y_offset', $(this).offset().top - 100)
     });
 
     $window.scroll(function(){
