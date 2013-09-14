@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Anachronistic Flashbacks
+subtitle: How Different Players Respond to Continuity Problems
+hero_image: "anachronistic-flashbacks.jpg"
 categories:
 - Blog
 - Game-Design
@@ -15,7 +17,7 @@ The study is about how players react to anachony in games, and the results surpr
 players can be broken into three main groups:
 
 1.  Players who accept the anachrony as part of the nature of the game system.
-    *Sure that TV wasn't really smashed, but it's a game, *c'est la vie**
+    *Sure that TV wasn't really smashed, but it's a game, c'est la vie*
 2.  Players who believe there must be an explanation for the inconsistency that they don't know about.
     *Maybe the broken TV was removed and replaced with a working TV*
 3.  Players who object to the inconsistency, and view it as a failure of the game designer.
