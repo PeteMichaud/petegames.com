@@ -161,7 +161,7 @@ Please help mankind by filling this survey out. It'll only take a few minutes.
 In return you'll get pretty graphs and the satisfaction of being an anonymous data point.
 
 <iframe src="https://docs.google.com/forms/d/186Srn-QXPFgrEPIhpLTbgLqoxgQ2oi7yVjMFm3JitCY/viewform?embedded=true"
-    width="730"
+    width="100%"
     height="500"
     frameborder="0"
     marginheight="0"
