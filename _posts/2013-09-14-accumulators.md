@@ -36,7 +36,7 @@ Before I even arrived at that thought, I knew that these games were tapping into
 system. It's not even targeting the relatively "low" limbic system--this is hitting in the hindbrain like meth hits the
 hindbrain.
 
- {% blog_image heisenberg-accumulator.jpg | I'm the one who clicks %}
+ {% blog_image heisenberg-accumulator.jpg | I am the one who clicks %}
 
 # Why it Works
 
@@ -59,7 +59,7 @@ Normally I avoid accumulators, but I wanted to answer this question, so I clicke
 *   It's easy. There's no skill involved in making the number go up. No learning curve to frustrate you at all--just
     juice to mesmerize you like a minnow swimming too close to an angler fish.
 
-    {% blog_image angler-accumulator.jpg | A girl I dated in high school %}
+    {% blog_image angler-accumulator.jpg | Candid photo of Mark Pinkus %}
 
 *   It's novel. You visit the page you're not only taken by the visuals, but you're amused at the premise--I have to
     click the cookie to get a cookie? I'll poke it a little. *What's the harm?*
