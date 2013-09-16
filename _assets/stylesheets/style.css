@@ -1702,6 +1702,8 @@ padding-right: 25px;
 .parallax_over {height: 100%;background-color: rgba(0,0,0,.5); position: absolute; width: 100%;}
 .ie8 .parallax_over {background: black; filter: alpha(opacity=70);}
 .parallax h1 {font-size:35px; font-weight: 100; text-transform: uppercase;color: white; letter-spacing: 0;margin-bottom: 35px; }
+.parallax h2 {font-size:25px; font-weight: 100; text-transform: uppercase;color: white; letter-spacing: 0;margin-bottom: 35px; }
+
 .parallax_container {padding: 50px 0px;}
 .rectangle {padding: 40px;line-height: 28px; border:2px solid #FFFFFF; width:70%; margin: 0 auto;color:white; text-align: center;margin-top: 100px;}
 .rectangle p {margin: 0; font-size: 16px; display: block!important;}
@@ -2001,4 +2003,106 @@ h1,h2,h3,h4,h5,h6 {line-height: 25px;}
 
 
 
+}
+/* Resume          */
+
+.resume h3 {
+    float:left;
+}
+
+.timespan {
+    margin:10px 0;
+    float:right;
+    line-height: 40px;
+}
+
+.role {
+    display: block;
+    clear:both;
+    font-weight: 900;
+}
+
+.resume .skills h3 {
+    float:none;
+    margin:0;
+}
+
+.skills section {
+    width:45%;
+    float:left;
+}
+
+.skills section.r {
+    margin-left:20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.skills ul li {
+    list-style: none;
+    padding:5px;
+    margin:0;
+}
+
+.skills ul li.alt {
+    background:#f6f6f6;
+}
+
+@media only screen and (max-width:980px) {
+    .skills section {
+        width:100%;
+        float:none;
+    }
+    .skills section.r {
+        margin-left:0;
+    }
+    .resume .skills section h3 {
+        margin:15px 0 10px 0;
+    }
+}
+
+.resume.blog_post .blog-body .hire_button {
+    background-color: #ff4040;
+    margin-top:20px;
+    color: white;
+    border-radius: 2px;
+    display: block;
+    margin:15px auto;
+    padding:15px 30px;
+    text-align: center;
+    width:50%;
+    color:#fff;
+    text-decoration: none;
+    -moz-transition: .15s ease-in-out;
+    -webkit-transition: .15s ease-in-out;
+    -o-transition: .15s ease-in-out;
+    -ms-transition: .15s ease-in-out;
+    transition: .15s ease-in-out;
+    text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+}
+
+.resume.blog_post .blog-body .hire_button:visited{
+    color:#fff
+}
+.resume.blog_post .blog-body .hire_button:hover {
+    background-color: #25292c;
+}
+
+.resume .contact {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.resume .contact div {
+    display: inline-block;
+    margin:0 5px 0 0;
+    padding:0 0 0 5px;
+    border-left: 1px solid #ddd;
+}
+
+.resume .contact div:first-child{
+    border-left:0;
 }
