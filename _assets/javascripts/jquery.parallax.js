@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var SCROLL_SPEED = 1;
+    var SCROLL_SPEED = 3;
     var $window = $(window);
     var $parallax = $('.parallax');
 
