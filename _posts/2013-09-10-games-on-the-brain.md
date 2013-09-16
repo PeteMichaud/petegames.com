@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Games on the Brain
+subtitle: Can we categorize games according to brain regions?
+hero_image: "games-on-the-brain.jpg"
 categories:
 - Blog
 - Game-Design
