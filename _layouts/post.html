@@ -1,11 +1,249 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!-- *** BLOG START *** -->
+<div id="blog" class="section gray blog_post">
+<div class="container">
+<div class="row">
+<div class="divider"></div>
+<div class="span8">
+    <h1 class="page_title small"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <h2 class="page_subtitle">{{ page.subtitle }}</h2>
+    <div class="page_line"></div>
+</div><!--span12-->
 
-<div class="post">
-{{ content }}
+<div class="clear"></div>
+<div class="divider blog"></div>
+
+<div class="span8">
+
+    <div class="blog-item">
+        {% if page.hero_image %}
+        <img src="{{ site.blog_image_path }}{{ page.hero_image }}" alt="{{ page.title }}" class="blog_hero" />
+        {% endif %}
+        <div class="blog-body">
+            <div class="the-author-img">
+                <img src="/assets/images/author.png" alt="Pete Michaud">
+            </div>
+            {{ content }}
+            <div class="metas">
+                <div class="the-date"><a href="{{ post.url }}"><span class="calendar gray icon"></span>{{ page.date | date: "%B %d, %Y" }}</a></div>
+                <div class="clear"></div>
+            </div><!--metas-->
+        </div>
+    </div><!--blog-item-->
+
+
+
+    <section id="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'petegames';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{% comment %}
+        <h3 class="blogpost-title">Comments (4)</h3>
+
+        <div class="comments-list">
+
+            <div class="comment">
+                <article>
+
+                    <div class="comment-head">
+                        <div class="post-info">
+                            <a href="#" class="post-avatar" style="background-image:url('/assets/images/author.png');"></a>
+                            <a href="#" class="post-author">Jonathan</a>
+                            <time datetime="2013-10-30T18:55:25+00:00">On 10 Mar, 2013</time>
+                            <span class="ago">2 minutes ago</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="comment-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+                        <a href="#" class="m-btn red-stripe replybutton">Reply</a>
+                        <div class="clear"></div>
+                    </div><!-- end .comment-body -->
+                </article>
+            </div>
+
+
+
+            <div class="comment reply">
+
+                <article>
+                    <div class="comment-head">
+                        <div class="post-info">
+                            <a href="#" class="post-avatar" style="background-image:url('/assets/images/author.png');"></a>
+                            <a href="#" class="post-author">Jonathan</a>
+                            <time datetime="2013-10-30T18:55:25+00:00">On 10 Mar, 2013</time>
+                            <span class="ago">2 minutes ago</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="comment-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+                        <a href="#" class="m-btn red-stripe replybutton">Reply</a>
+                        <div class="clear"></div>
+                    </div><!-- end .comment-body -->
+                </article>
+
+            </div>
+
+            <div class="comment">
+                <article>
+
+                    <div class="comment-head">
+                        <div class="post-info">
+                            <a href="#" class="post-avatar" style="background-image:url('/assets/images/author.png');"></a>
+                            <a href="#" class="post-author">Jonathan</a>
+                            <time datetime="2013-10-30T18:55:25+00:00">On 10 Mar, 2013</time>
+                            <span class="ago">2 minutes ago</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="comment-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+                        <a href="#" class="m-btn red-stripe replybutton">Reply</a>
+                        <div class="clear"></div>
+                    </div><!-- end .comment-body -->
+                </article>
+            </div>
+
+            <div class="comment">
+                <article>
+
+                    <div class="comment-head">
+                        <div class="post-info">
+                            <a href="#" class="post-avatar" style="background-image:url('/assets/images/author.png');"></a>
+                            <a href="#" class="post-author">Jonathan</a>
+                            <time datetime="2013-10-30T18:55:25+00:00">On 10 Mar, 2013</time>
+                            <span class="ago">2 minutes ago</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="comment-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+                        <a href="#" class="m-btn red-stripe replybutton">Reply</a>
+                        <div class="clear"></div>
+                    </div><!-- end .comment-body -->
+                </article>
+            </div>
+
+
+
+            <div id="response">
+                <h3 class="blogpost-title">Leave a Comment</h3>
+
+                <form method="post" class="reply-input">
+                    <div class="input-block">
+                        <input type="text" name="name" value="" id="comment-name" required="">
+                        <label for="comment-name" class="label_comment"><strong>Name</strong> (required)</label>
+                    </div>
+
+                    <div class="input-block">
+                        <input type="email" name="email" value="" id="comment-email" required="">
+                        <label for="comment-email" class="label_comment"><strong>Email</strong> (required)</label>
+                    </div>
+
+                    <div class="input-block">
+                        <input type="url" name="url" value="" id="comment-url">
+                        <label for="comment-url" class="label_comment"><strong>Website</strong></label>
+                    </div>
+
+                    <div class="textarea-block">
+                        <textarea name="message" id="comment-message" cols="88" rows="6" required=""></textarea>
+                        <div class="clear"></div>
+                        <label for="comment-message" class="label_comment"><strong>Your Comment</strong> (required)</label>
+                    </div>
+
+                    <input type="submit" value="Submit">
+                    <div class="clear"></div>
+                </form>
+
+            </div><!--response-->
+
+        </div><!--comment list-->
+{% endcomment %}
+    </section>
+
+
+</div><!--span8-->
+
+<div class="span4 ">
+    <!-- *** SIDEBAR START *** -->
+    <div class="five columns">
+        <div class="sidebar">
+
+            <div class="widget categories">
+                <h3>Categories</h3>
+                <ul>
+                    {% for cat in site.categories %}
+                    <li><a href="">{{ cat[0] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div><!-- end categories -->
+
+            <div class="widget video">
+                <h3>Video</h3>
+                <iframe style="width:100%" src="http://player.vimeo.com/video/7449107?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0" height="230">
+                </iframe>
+            </div><!-- end widget video -->
+
+        </div><!--end sidebar-->
+    </div><!-- end five columns -->
+    <!-- *** SIDEBAR END *** -->
+
 </div>
 
-(Need to put disqus here)
+</div><!--row-->
+</div><!--container-->
+</div><!--blog-->
+<!-- *** BLOG END *** -->
