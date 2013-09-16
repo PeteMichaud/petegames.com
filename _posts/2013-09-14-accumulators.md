@@ -81,7 +81,7 @@ of which I played for very long.
 5.  But... I can *almost* afford this other thing. I wonder what that does? I'll just stick around just long enough to
     find out.
 6.  Oh, it's ready, that's exciting!
-7.  **Holy Fucking Shit 1000 cookies per seconds?** That's crazy! Shit, just a few minutes ago I was only generating 1,
+7.  **Holy Fucking Shit 1000 cookies per second?** That's crazy! Shit, just a few minutes ago I was only generating 1,
     now I'm at 1000. At this rate I might as well stick around for the next upgrade, it won't take any time at all...
 
 In Diablo you uncover unexplored dungeons which feels good for a while, but then you see an enemy. You're not sure what
