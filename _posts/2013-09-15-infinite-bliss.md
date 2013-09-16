@@ -57,6 +57,8 @@ could mean a player--an *actual human being*--no longer has the experience of "b
 agony". They will literally have to experience withdrawal and detox to reset their baseline. They may never fully
 recover.
 
+{% blog_image hilton-infinite-bliss.jpg | Farmville: Not Even Once %}
+
 # Designing Bliss
 
 This puts game designers in a precarious place similar to tobacco companies. We sell something that people like, and
