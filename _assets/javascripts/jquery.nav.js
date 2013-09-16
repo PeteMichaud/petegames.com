@@ -144,7 +144,12 @@
 			var $link = $(e.currentTarget);
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
-			
+
+            if ($(newLoc).length == 0)
+            {
+                return true;
+            }
+
 			if(!$parent.hasClass(self.config.currentClass)) {
 				//Start callback
 				if(self.config.begin) {
