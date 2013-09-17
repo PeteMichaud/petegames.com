@@ -548,53 +548,19 @@ title: Home
 
 <div id="container_portfolio" class="clickable variable-sizes clearfix">
 
-	<div class="portfolio_item transition concept vertical" data-category="concept" >
-			<div class="loop">
-			<div class="img-container" style="background-image:url(/portfolio/guardian/thumb.jpg)">
-				<div class="over" style="background-image:url(/portfolio/guardian/thumb-over.jpg)">
-					<div class="details">
-						<h4 class="title"><a class="ajax-trigger" href="/portfolio/guardian/"></a></h4>
-					</div>
-				</div>
-			</div>
-		</div><!--loop-->
-	</div><!--portfolio item-->
-
-	<div class="portfolio_item transition concept horizontal" data-category="concept">
-			<div class="loop">
-			<div class="img-container" style="background-image:url(/portfolio/benevolent_sun/thumb.jpg)">
-				<div class="over" style="background-image:url(/portfolio/benevolent_sun/thumb-over.jpg)">
-					<div class="details">
-						<h4 class="title"><a class="ajax-trigger" href="/portfolio/benevolent_sun/"></a></h4>
-					</div>
-				</div>
-			</div>
-		</div><!--loop-->
-	</div><!--portfolio item-->
-
-	<div class="portfolio_item transition concept" data-category="concept">
-			<div class="loop">
-			<div class="img-container" style="background-image:url(/portfolio/cosmic_bloom/thumb.jpg)">
-				<div class="over" style="background-image:url(/portfolio/cosmic_bloom/thumb-over.jpg)">
-					<div class="details">
-						<h4 class="title"><a class="ajax-trigger" href="/portfolio/cosmic_bloom/"></a></h4>
-					</div>
-				</div>
-			</div>
-		</div><!--loop-->
-	</div><!--portfolio item-->
-
-	<div class="portfolio_item transition concept big" data-category="concept">
-			<div class="loop">
-			<div class="img-container" style="background-image:url(/portfolio/labyrinth/thumb.jpg)">
-				<div class="over" style="background-image:url(/portfolio/labyrinth/thumb-over.jpg)">
-					<div class="details">
-						<h4 class="title"><a class="ajax-trigger" href="/portfolio/labyrinth"></a></h4>
-					</div>
-				</div>
-			</div>
-		</div><!--loop-->
-	</div><!--portfolio item-->
+    {% for piece in site.categories['portfolio'] %}
+    <div class="portfolio_item transition {{ piece.portfolio_type }} vertical" data-category="{{ piece.portfolio_type }}" >
+        <div class="loop">
+            <div class="img-container" style="background-image:url(/portfolio/{{piece.short_name}}/thumb.jpg)">
+                <div class="over" style="background-image:url(/portfolio/{{piece.short_name}}/thumb-over.jpg)">
+                    <div class="details">
+                        <h4 class="title"><a class="ajax-trigger" href="/portfolio/{{piece.short_name}}/"></a></h4>
+                    </div>
+                </div>
+            </div>
+        </div><!--loop-->
+    </div><!--portfolio item-->
+    {% endfor %}
 
 	<div class="portfolio_item transition code vertical" data-category="code">
 			<div class="loop">
