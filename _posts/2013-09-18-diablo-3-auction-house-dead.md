@@ -78,6 +78,6 @@ The whole point of Diablo is repetitively and almost mindlessly clicking the scr
 that would allow you to gain more in game rewards.
 
 That sounds like one of those [accumulator]({% post_url 2013-09-14-accumulators %}) "games." Maybe it's
-[evil]({% post_url 2013-09-15-infinite-bliss %})?
+[evil]({% post_url 2013-09-16-infinite-bliss %})?
 
 On second thought, maybe they should keep the Auction House in.

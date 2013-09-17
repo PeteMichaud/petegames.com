@@ -124,7 +124,7 @@ accumulate enough cookies to get even one of them. I got bored and gave up.
 1.  **Are Accumulators exploitative, or do they just deliver what a player obviously wants on some primitive level?**
 
     My gut says that using this knowledge is potentially "evil" in the "Don't Be Evil" sense. This is a big topic that I
-    expanded on in a different article: [Infinite Bliss]({% post_url 2013-09-15-infinite-bliss %}).
+    expanded on in a different article: [Infinite Bliss]({% post_url 2013-09-16-infinite-bliss %}).
 
 2.  **What separates an accumulator from games like Diablo or World of WarCraft?**
 
@@ -132,7 +132,7 @@ accumulate enough cookies to get even one of them. I got bored and gave up.
     accumulation. If there *is* a difference I don't think there's a factor that flips the switch from "legitimate game" to
     "accumulator" (if such a distinction exists). I think it's probably a spectrum that tracks how "accumulator-ish" a game
     is. I talk more about how game designers might deal with that spectrum in
-    [Infinite Bliss]({% post_url 2013-09-15-infinite-bliss %}).
+    [Infinite Bliss]({% post_url 2013-09-16-infinite-bliss %}).
 
 # What we can Learn from Accumulators
 
