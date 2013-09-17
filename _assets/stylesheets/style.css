@@ -2106,3 +2106,10 @@ h1,h2,h3,h4,h5,h6 {line-height: 25px;}
 .resume .contact div:first-child{
     border-left:0;
 }
+
+.portfolio_description {
+    font-style: italic;
+    font-size: 1.25em;
+    margin:25px;
+    text-align: center;
+}

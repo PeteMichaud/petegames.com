@@ -1,0 +1,15 @@
+---
+layout: post
+---
+<a href="{{ page.portfolio_img }}" class="prettyPhoto portfolio_post_img">
+<img src="{{ page.portfolio_img }}" alt="{{ page.title }}" title="{{ page.title }}" />
+</a>
+<div class="portfolio_description">{{ page.description }}</div>
+
+{{ content }}
+
+<div><strong>Skills :</strong> {{ page.skills | array_to_sentence_string }}</div>
+
+{% if page.project_url %}
+<div><strong>Project URL:</strong> <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a></div>
+{% endif %}
