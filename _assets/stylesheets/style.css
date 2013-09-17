@@ -2115,11 +2115,36 @@ h1,h2,h3,h4,h5,h6 {line-height: 25px;}
     text-align: center;
 }
 
-.pagination {
-    text-align: center;
-}
-
 .pagination .current-page {
     color:#ff0404;
     background:#e0e0e0;
+}
+
+
+
+.blog_link {
+
+    margin:50px 0 0 0;
+    text-align: center;
+    font-size:1.5em;
+
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    padding: 4px 12px;
+    line-height: 2em;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.blog_link:hover,
+.blog_link:focus {
+    background-color: #f5f5f5;
 }
