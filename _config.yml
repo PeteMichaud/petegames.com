@@ -4,7 +4,7 @@ pygments: true
 
 download_path: /files/blog/attachments/
 blog_image_path: /files/blog/images/
-
+category_dir: /blog/categories/
 assets:
   debug: false
   js_compressor: uglifier
