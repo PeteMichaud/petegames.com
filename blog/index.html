@@ -17,7 +17,7 @@ title: Blog
             <div class="divider blog"></div>
 
             <div class="blog_container front_page blog_page">
-                {% for post in site.posts %}
+                {% for post in paginator.posts %}
                 <div class="span4">
                     <div class="blog-item">
                         {% if post.hero_image %}
@@ -52,6 +52,45 @@ title: Blog
                     </div><!--span4-->
                     {% endfor %}
                 </div><!--blog-container-->
+            </div>
+            <div class="span12">
+                <!-- Pagination links -->
+                <div id="post-pagination" class="pagination">
+                    <ul class="pages">
+                        {% if paginator.previous_page %}
+                        <li class="previous">
+                            {% if paginator.previous_page == 1 %}
+                            <a href="/blog/">&larr;</a>
+                            {% else %}
+                            <a href="{{ paginator.previous_page_path }}">&larr;</a>
+                            {% endif %}
+                        </li>
+                        {% endif %}
+
+                        <li class="page">
+                            {% if paginator.page == 1 %}
+                            <span class="current-page">1</span>
+                            {% else %}
+                            <a href="/blog/">1</a>
+                            {% endif %}
+                        </li>
+
+                        {% for count in (2..paginator.total_pages) %}
+                        <li class="page">
+                            {% if count == paginator.page %}
+                            <span class="current-page">{{ count }}</span>
+                            {% else %}
+                            <a href="/blog/page{{ count }}">{{ count }}</a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                        {% if paginator.next_page %}
+                        <li class="next">
+                            <a href="{{ paginator.next_page_path }}">&rarr;</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

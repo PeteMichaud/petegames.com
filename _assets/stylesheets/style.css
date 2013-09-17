@@ -2114,3 +2114,12 @@ h1,h2,h3,h4,h5,h6 {line-height: 25px;}
     margin:25px;
     text-align: center;
 }
+
+.pagination {
+    text-align: center;
+}
+
+.pagination .current-page {
+    color:#ff0404;
+    background:#e0e0e0;
+}
