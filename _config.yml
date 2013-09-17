@@ -6,7 +6,7 @@ download_path: /files/blog/attachments/
 blog_image_path: /files/blog/images/
 category_dir: /blog/categories/
 
-paginate: 3
+paginate: 9
 paginate_path: "blog/page:num"
 
 assets:
