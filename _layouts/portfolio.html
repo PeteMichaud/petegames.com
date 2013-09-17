@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="item-data">
+        <div class="helper">
+
+            <div class="row-fluid">
+                <div class="span7">
+                    <h3>{{ page.title }}</h3>
+                    <div class="hr hr_small"> <span class="hr_inner"></span></div>
+                    <div class="portfolioContent">
+                        <p class="portfolioDescription">
+                            {{ page.description }}
+                        </p>
+
+                        {{ content }}
+
+                        <ul class="portfolioAjaxMetaList">
+                            <li><strong>Skills :</strong> {{ page.skills | array_to_sentence_string }}</li>
+                            {% if page.project_url %}
+                            <li><strong>Project URL:</strong> <a href="{{ page.project_url }}" target="_blank">
+                                {{ page.project_url }}
+                            </a></li>
+                            {% endif %}
+                        </ul>
+                    </div><!--portfolioContent-->
+                </div>
+
+                <div class="span5">
+                    <div class="portfolioAjaxImage">
+                        <div class="portfolio_img">
+                            <a href="{{ page.portfolio_img }}" class="prettyPhoto">
+                                <img src="{{ page.portfolio_img }}" alt="{{ page.title }}"></a></div>
+                    </div>
+                </div>
+            </div><!--item data-->
+
+        </div><!--helper-->
+    </div><!--item-data-->
+
+</div>
