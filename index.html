@@ -203,7 +203,7 @@ title: Home
         <div class="divider"></div>
 
         <div class="blog_container front_page">
-            {% for post in site.posts limit:3 %}
+            {% for post in site.categories['blog'] limit:3 %}
             <div class="span4">
                 <div class="blog-item">
                     {% if post.hero_image %}
