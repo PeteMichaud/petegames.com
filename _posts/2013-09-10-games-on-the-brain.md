@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Games on the Brain
-subtitle: Can we categorize games according to brain regions?
+subtitle: "Can we categorize games according to brain regions?"
 hero_image: "games-on-the-brain.jpg"
 categories:
 - Blog
@@ -65,12 +65,13 @@ anything too scary, or kill anything that you can't fuck.
 My hypothesis is that different games stimulate different regions of the brain, and depending on a player's motivation
 for gaming, we can predict what game genres they will enjoy. I also think that maybe if we have a strong grasp of the
 reward systems at play in any given genre, we can use that knowledge to craft an experience that is if not better, then
-at least more addictive.
+at least more [addictive]({% post_url 2013-09-14-accumulators %}).
 
 ***
 
-**Note**: I'm really interested in gaming addiction in general, but I think it's probably unethical to engage in
-industrial grade subversion of a player's mental machinery just to get more play time.
+**Note**: I'm really interested in [gaming addiction]({% post_url 2013-09-14-accumulators %}) in general, but I think
+it's probably unethical to engage in industrial grade subversion of a player's mental machinery just to get more play
+time.
 
 ***
 
@@ -87,7 +88,7 @@ I want to make some predictions about which genres hit which brain regions:
 
 *   **Neocortex**: Strategy, Puzzle
 *   **Limbic**: FPS, Action
-*   **Reptile**: Horror, [Accumulator](cookieclicker)
+*   **Reptile**: Horror, [Accumulator]({% post_url 2013-09-14-accumulators %})
 
 I also want to hypothesize that **we can categorize gamers according to which brain region they are dominantly stimulating
 when they play**. Anecdotally, I believe that most gamers are dominant with one region, and have a secondary region as
