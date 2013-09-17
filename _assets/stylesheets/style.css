@@ -931,6 +931,7 @@ background-position: center;
 
 
 .blog-item {background-color: #ffffff;}
+.blog_page .blog-item {margin-bottom:25px;}
 .blog_post .img-container-blog {
 min-height: 455px;
 }
