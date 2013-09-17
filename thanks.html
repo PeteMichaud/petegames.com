@@ -12,9 +12,49 @@ title: Thanks!
                 <div class="page_line"></div>
             </div>
 
-            <div class="span6 offset3">
-
-            </div><!--span6-->
+            <div class="blog_container front_page">
+                {% for post in site.categories['blog'] limit:3 %}
+                <div class="span4">
+                    <div class="blog-item">
+                        {% if post.hero_image %}
+                        <div class="img-container-blog" style="background-image: url({{ site.blog_image_path }}{{ post.hero_image }});">
+                            {% else %}
+                            <div class="img-container-blog" style="background-image: url(http://lorempixel.com/500/500/abstract/);">
+                                {% endif %}
+                                <a href="{{ post.url }}" class="hero_click"></a>
+                                <div class="the-author-img">
+                                    <img src="/assets/images/author.png" alt="Pete Michaud">
+                                </div>
+                            </div>
+                            <div class="blog-body">
+                                <div class="the-title"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
+                                {{ post.excerpt }}
+                                <div class="metas">
+                                    <div class="the-date"><a href="{{ post.url }}"><span class="calendar gray icon"></span>{{ post.date | date: "%B %d, %Y" }}</a></div>
+                                    <div class="the-comments"><a href="{{ post.url }}#disqus_thread">
+                                        <span class="comments gray icon"></span>#
+                                    </a></div>
+                                    <a href="{{ post.url }}" class="read_more_small"><i class="fa_icon icon-plus"></i></a>
+                                    <div class="clear"></div>
+                                </div><!--metas-->
+                            </div>
+                        </div><!--blog-item-->
+                    </div><!--span4-->
+                    {% endfor %}
+                </div><!--blog-container-->
+            </div>
         </div>
     </div>
 </div><!--section-->
+
+<script type="text/javascript">
+    var disqus_shortname = 'petegames';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
