@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: portfolio_post
 title: The Guardian
 short_name: guardian
 portfolio_type: concept
-description: "Conceptual piece of a woman who is safe in the branches of her guardian tree, which bristles with mysterious power, and throbs with ancient benevolence."
+description: "A woman safe in the branches of her guardian tree, which bristles with mysterious power, and throbs with ancient benevolence."
 skills:
 - 2D Environment Art
 - Character Art

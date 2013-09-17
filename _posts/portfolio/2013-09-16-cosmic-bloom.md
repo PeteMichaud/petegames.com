@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 title: Cosmic Bloom
 short_name: cosmic_bloom
 portfolio_type: concept

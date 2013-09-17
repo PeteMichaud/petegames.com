@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 title: Labyrinthine Garden
 short_name: labyrinth
 portfolio_type: concept

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio_post
 title: Benevolent Sun
 short_name: benevolent_sun
 portfolio_type: concept
