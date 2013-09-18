@@ -8,7 +8,7 @@ module Jekyll
       @name = 'index.md'
 
       self.process(@name)
-      self.read_yaml(File.dirname(piece.path), File.basename(piece.name))
+      self.read_yaml(File.join(base, File.dirname(piece.path)), File.basename(piece.name))
       self.data['layout'] = 'portfolio'
       self.data['title'] = piece.title
     end
