@@ -1,15 +1,75 @@
 ---
 layout: default
 ---
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <h1 class="page_title">{{ page.title | humanize }}</h1>
 
-<section>
-    <table>
-        {% for post in site.categories[page.category] %}
-        <tr>
-            <td><i class="icon-clock"></i><time datetime="{{post.date|date:'%F'}}">{{post.date|date:"%b %d, %Y"}}</time></td>
-            <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-            <td><span class="category"><i class="icon-tag"></i> {{post.categories | category_links}}</span></td>
-        </tr>
-        {% endfor %}
-    </table>
-</section>
+                <div class="page_line"></div>
+            </div>
+
+            <div class="span8 offset2">
+                <a href="/blog" class="blog_link">&larr; Back to Blog Index</a>
+            </div>
+
+            <div class="clear"></div>
+            <div class="divider blog"></div>
+
+            <div class="blog_container front_page blog_page">
+                {% for post in site.categories[page.category] %}
+                <div class="span4">
+                    <div class="blog-item">
+                        {% if post.hero_image %}
+                        <div class="img-container-blog" style="background-image: url({{ site.blog_image_path }}{{ post.hero_image }});">
+                            {% elsif post.portfolio_img %}
+                            <div class="img-container-blog" style="background-image: url({{ post.portfolio_img }});">
+                                {% else %}
+                                <div class="img-container-blog" style="background-image: url(http://lorempixel.com/500/500/abstract/);">
+                                    {% endif %}
+                                    <a href="{{ post.url }}" class="hero_click"></a>
+                                    <div class="the-author-img">
+                                        <img src="/assets/images/author.png" alt="Pete Michaud">
+                                    </div>
+                                </div>
+                                <div class="blog-body">
+                                    <div class="the-title"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
+                                    {% if post.layout == 'portfolio_post' %}
+                                    <p>{{ post.description }}</p>
+                                    {% else %}
+                                    {{ post.excerpt }}
+                                    {% endif %}
+                                    <div class="metas">
+                                        <div class="the-date"><a href="{{ post.url }}"><span class="calendar gray icon"></span>{{ post.date | date: "%B %d, %Y" }}</a></div>
+                                        <div class="the-comments"><a href="{{ post.url }}#disqus_thread">
+                                            <span class="comments gray icon"></span>#
+                                        </a></div>
+                                        <a href="{{ post.url }}" class="read_more_small"><i class="fa_icon icon-plus"></i></a>
+                                        <div class="clear"></div>
+                                    </div><!--metas-->
+                                </div>
+                            </div><!--blog-item-->
+                        </div><!--span4-->
+                        {% endfor %}
+                    </div><!--blog-container-->
+                </div>
+            </div>
+
+            <div class="span8 offset2">
+                <a href="/blog" class="blog_link bottom">&larr; Back to Blog Index</a>
+            </div>
+        </div>
+    </div><!--section-->
+
+    <script type="text/javascript">
+        var disqus_shortname = 'petegames';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
