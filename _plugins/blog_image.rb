@@ -8,7 +8,7 @@ module Jekyll
 
     def render(context)
       format("<div class='blog_img'><img src='%s%s' alt='%s' title='%s' /><div class='caption'>%s</div></div>",
-             context.registers[:site].config['blog_image_path'],
+             (context.registers[:site].config['blog_image_path'] || '/files/blog/images/'),
              @image_file_name,
              @caption,
              @caption,
