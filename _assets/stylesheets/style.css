@@ -251,6 +251,30 @@ text-align: center;}
 .about_container {position: relative; margin:50px 0;}
 .over_about p {color: white;text-align: center;font-weight: lighter; font-size:18px;}
 
+.hire_pitch {
+    margin:50px 0 0 0;
+    padding:80px 50px;
+    background-color: rgba(255, 54, 54, 0.9);
+
+}
+.hire_pitch h1{color: white;margin-top: 35px;
+    font-weight: lighter;
+    letter-spacing: 0;
+    font-size: 35px; margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.hire_pitch p {color: white;text-align: center;font-weight: lighter; font-size:18px;}
+
+.hire_pitch a{
+    color:#fff;
+    text-decoration: underline;
+}
+
+.hire_pitch a:hover, .hire_pitch a:focus{
+    color:#333;
+}
 /*=================================================
 3 - PAGE TITLE 
 =================================================*/
