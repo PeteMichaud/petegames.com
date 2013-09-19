@@ -50,7 +50,7 @@ Also known as the *paleomammalian brain*, it's the region of the brain we share 
 emotions mostly, and for physiological addictions and aversions (sort of, again glossing).
 
 It's the reason your dog can get jealous, but he can't do algebra. It's the reason you tell yourself you shouldn't eat
-that pizza, but you eat the whole thing anyway. You shit your guts out all night after eating at a skanky Chinese
+that pizza, but you eat the whole thing anyway. Or, you shit your guts out all night after eating at a skanky Chinese
 buffet. Now when you see a chinese place--*any* chinese place--your stomach feels like a bag of smashed assholes.
 
 {% blog_image sick-monkey-brain.jpg | Thanks limbic system, you kept my dumb monkey ancestors from puking up their liver more than once. %}
@@ -133,9 +133,9 @@ all playing various games hooked up to an fMRI machine. That's probably not goin
 
 {% blog_image science-brain.jpg %}
 
-What I **can** do is run an informal survey of gamers. The selection method (self selection) is bad, but actually kind
-of appropriate for this use case, considering that only people who self identify as "gamers" would be interested in
-such a survey, and that's who we want. I bet I can get a pretty big sample size as well.
+What I **can** do is run an informal survey of gamers. The selection method (self selection) will give us skewed results,
+but it's actually kind of appropriate for this use case, considering that only people who self identify as "gamers"
+would be interested in such a survey, and that's who we want. I bet I can get a pretty big sample size as well.
 
 I'm going to try to answer two questions:
 
